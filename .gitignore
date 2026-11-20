@@ -1,4 +1,6 @@
 .venv/
+.venv_ancien/
+
 __pycache__/
 .env
 .env.*
