@@ -41,7 +41,7 @@ llm = ChatOllama(
 # Commencer par deux cas :
 # une réponse nécessitant deux passages et une information absente.
 questions = [
-    "Est-ce que l’inscription est payante ?",
+    "Quels sont les tarifs d’inscription selon le lieu de résidence ?",
     "Quel est le numéro de téléphone de la médiathèque ?",
 ]
 
