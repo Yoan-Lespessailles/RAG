@@ -6,10 +6,8 @@ passages = [
     "La médiathèque ouvre du mardi au samedi, de 10 h à 18 h.",
     "L’inscription est gratuite pour les habitants de la commune.",
     "Chaque lecteur peut emprunter jusqu’à 5 livres pendant 21 jours.",
+    "L'inscription est de 6€ pour les adultes n'habitant pas dans la commune"
 ]
-
-# Question pour le test de recherche
-question = "Combien de temps puis-je garder un livre ?"
 
 print("Chargement du modèle d’embeddings...")
 
@@ -29,14 +27,24 @@ index = FAISS.from_texts(
     embedding=embeddings,
 )
 
-# Transformer la question en vecteur, puis chercher le passage le plus proche
-# k=1 signifie un seul résultat
-resultats = index.similarity_search(question, k=1)
+# Tester différents sujets, puis une information absente du corpus.
+questions = [
+    "Combien de temps puis-je garder un livre ?",
+    "Est-ce que l’inscription est payante ?",
+    "À quelle heure la médiathèque ouvre-t-elle ?",
+    "Quel est le numéro de téléphone de la médiathèque ?",
+]
 
-print(f"\nQuestion : {question}")
+for question in questions:
+    print(f"\nQuestion : {question}")
 
-# Chaque résultat est un objet Document
-# Son attribut page_content contient le texte du passage retrouvé
-for document in resultats:
-    print(f"\nPassage retrouvé : {document.page_content}")
+    # Retrouver les deux passages les plus proches et leurs distances.
+    resultats = index.similarity_search_with_score(question, k=2)
 
+    # Chaque résultat contient désormais deux éléments :
+    # le Document et sa distance par rapport à la question.
+    for rang, (document, distance) in enumerate(resultats, start=1):
+        print(f"\nRésultat {rang} — distance : {distance:.4f}")
+        print(document.page_content)
+
+    print("\n" + "-" * 60)
