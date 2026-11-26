@@ -5,8 +5,8 @@ import pymupdf  # Pour ouvrir le PDF et en extraire le texte
 # Le PDF sera cherché dans ce dossier, même si on lance le script ailleurs
 dossier = Path(__file__).resolve().parent
 
-# Construit le chemin vers le PDF placé à côté du script
-fichier_pdf = dossier / "exemple.pdf"
+# PDF du scénario, placé dans le même dossier que ce script.
+fichier_pdf = dossier / "la_cloche_des_roseaux.pdf"
 
 # Ouvre le PDF. Le bloc with ferme automatiquement le document à la fin
 with pymupdf.open(fichier_pdf) as document:
