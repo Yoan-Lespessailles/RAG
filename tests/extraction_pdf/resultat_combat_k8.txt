@@ -1,0 +1,84 @@
+
+Nombre de sections : 28
+Nombre de passages : 32
+
+Section : Un village derrière les digues — morceau 1
+Page : 1 — 83 tokens de texte
+Un village derrière les digues
+Au bord du marais de Virebrume, Nacreval vit de la récolte des roseaux et de son moulin. Depuis six nuits, une cloche sonne sous les eaux. Deux pêcheurs ont disparu ; une troisième victime, la meunière Maëla, a été retrouvée vivante et muette près de la digue.
+------------------------------------------------------------
+
+Section : Le contrat d’Iria Voss — morceau 1
+Page : 1 — 86 tokens de texte
+Le contrat d’Iria Voss
+Iria Voss, bourgmestre de Nacreval, engage les chasseurs pour identifier la créature et mettre fin aux attaques. Le paiement de base est de 84 couronnes : 24 couronnes d’avance à l’acceptation du contrat et 60 couronnes après la fin des attaques et la vérification des preuves.
+------------------------------------------------------------
+
+Section : Une prime sous condition — morceau 1
+Page : 1 — 84 tokens de texte
+Une prime sous condition
+Iria ajoute une prime de 18 couronnes si Maëla retrouve sa voix et si aucun habitant n’est sacrifié pendant l’enquête. Cette prime est versée avec le solde. Un simple récit de combat ne suffit pas : les chasseurs doivent présenter un fragment du battant noir de la cloche ou un témoignage de Maëla après la levée du mal.
+------------------------------------------------------------
+
+Section : Cadre de jeu — morceau 1
+Page : 1 — 88 tokens de texte
+Cadre de jeu
+Scénario original pour une séance de 2 à 3 heures, avec 2 à 4 personnages. Toutes les règles sont des règles maison autonomes ; ce document n’utilise pas les règles officielles de D&D; ou de The Witcher. Les couronnes sont la monnaie fictive de Nacreval. Les informations réservées au meneur sont incluses dans ce livret.
+------------------------------------------------------------
+
+Chargement du modèle d’embeddings...
+Création de l’index FAISS...
+
+Source sur la victoire provisoire : rang 8/32 — distance : 1.0684
+Une victoire provisoire
+À 0 point de vie, la Veilleuse se disperse. Elle réapparaît la nuit suivante si le rituel n’a pas été achevé. Vaincre son corps permet donc de gagner du temps, mais ne constitue pas une résolution durable du contrat.
+
+Comparaison RAG — k=8
+
+Question : Vaincre la Veilleuse au combat suffit-il à mettre fin aux attaques définitivement ?
+
+Extrait 1 — distance : 0.7366
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Effet du rituel
+Effet du rituel
+Une fois les trois étapes achevées, la Veilleuse disparaît définitivement, les attaques cessent et Maëla retrouve sa voix à l’aube suivante. Aucun sacrifice humain n’est nécessaire. Si les chasseurs n’ont sacrifié aucun habitant, ils remplissent alors les conditions de la prime de 18 couronnes, sous réserve de présenter une preuve à Iria.
+
+Extrait 2 — distance : 0.9367
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Combattre
+Combattre
+Chaque personnage commence avec 16 points de vie. À son tour, il peut se déplacer et effectuer une action : attaquer, utiliser un objet, frapper un montant ou accomplir une étape du rituel. Une attaque est un jet d’adresse contre la défense adverse ; une arme de personnage inflige 6 dégâts si elle touche
+
+Extrait 3 — distance : 0.9387
+Source : la_cloche_des_roseaux.pdf — page 4 — section : Le silence du fer
+Le silence du fer
+Frapper chacun des trois montants métalliques une fois au cours du même tour interrompt le cri de la Veilleuse et l’empêche d’attaquer pendant le tour suivant. Il faut trois actions distinctes. Répéter des frappes sur un seul montant ne produit pas cet effet.
+
+Extrait 4 — distance : 0.9443
+Source : la_cloche_des_roseaux.pdf — page 4 — section : Caractéristiques de combat
+Caractéristiques de combat
+La Veilleuse possède 28 points de vie et une défense de 12. À chaque tour, elle effectue une attaque contre un personnage à portée. Si elle touche, elle inflige 4 points de dégâts. Une fois par rencontre, son cri impose un test de volonté de difficulté 12 ; un échec empêche la cible d’agir pendant son prochain tour.
+
+Extrait 5 — distance : 0.9476
+Source : la_cloche_des_roseaux.pdf — page 1 — section : Une prime sous condition
+Une prime sous condition
+Iria ajoute une prime de 18 couronnes si Maëla retrouve sa voix et si aucun habitant n’est sacrifié pendant l’enquête. Cette prime est versée avec le solde. Un simple récit de combat ne suffit pas : les chasseurs doivent présenter un fragment du battant noir de la cloche ou un témoignage de Maëla après la levée du mal.
+
+Extrait 6 — distance : 0.9522
+Source : la_cloche_des_roseaux.pdf — page 3 — section : Le vrai déclencheur
+Le vrai déclencheur
+Un récupérateur a déplacé le battant noir pour le revendre. Ce geste a réveillé la Veilleuse des roseaux. Le battant est resté coincé dans la grille centrale ; il n’a pas quitté l’écluse. Remettre le battant dans la cloche est une condition du rituel, mais cette action seule ne met pas fin aux attaques.
+
+Extrait 7 — distance : 0.9944
+Source : la_cloche_des_roseaux.pdf — page 4 — section : Résistance et vulnérabilité
+Résistance et vulnérabilité
+Les armes ordinaires infligent la moitié de leurs dégâts à la Veilleuse, arrondie à l’inférieur. Une arme enduite d’huile de limaille inflige ses dégâts normaux : l’huile ne donne aucun bonus supplémentaire. Les dégâts de feu ne sont pas réduits, mais le feu ne rompt pas le lien avec la cloche.
+
+Extrait 8 — distance : 1.0684
+Source : la_cloche_des_roseaux.pdf — page 4 — section : Une victoire provisoire
+Une victoire provisoire
+À 0 point de vie, la Veilleuse se disperse. Elle réapparaît la nuit suivante si le rituel n’a pas été achevé. Vaincre son corps permet donc de gagner du temps, mais ne constitue pas une résolution durable du contrat.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Non, vaincre la Veilleuse au combat ne suffit pas à mettre fin aux attaques définitivement. Selon l'extrait 8, à 0 point de vie, la Veilleuse se disperse, mais elle réapparaît la nuit suivante si le rituel n’a pas été achevé. Cela signifie que la victoire est provisoire et ne constitue pas une résolution durable du contrat.
+
+------------------------------------------------------------

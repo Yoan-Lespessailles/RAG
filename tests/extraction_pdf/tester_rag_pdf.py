@@ -190,6 +190,35 @@ index = FAISS.from_texts(
     metadatas=metadonnees,
 )
 
+# Examiner le classement pour la question sur la victoire au combat.
+question_diagnostic = (
+    "Vaincre la Veilleuse au combat suffit-il à mettre fin "
+    "aux attaques définitivement ?"
+)
+
+# Examiner tout l’index pour trouver le rang de la source attendue.
+# Cette recherche sert au diagnostic ; elle n’est pas envoyée à Qwen.
+classement = index.similarity_search_with_score(
+    question_diagnostic,
+    k=len(passages),
+)
+
+source_trouvee = False
+
+for rang, (document, distance) in enumerate(classement, start=1):
+    if document.metadata["section"] == "Une victoire provisoire":
+        source_trouvee = True
+
+        print(
+            f"\nSource sur la victoire provisoire : "
+            f"rang {rang}/{len(passages)}"
+            f" — distance : {distance:.4f}"
+        )
+        print(document.page_content)
+
+if not source_trouvee:
+    print("\nSection « Une victoire provisoire » absente de l’index.")
+
 # Préparer la connexion au modèle déjà installé.
 # Ces réglages sont identiques au premier test RAG.
 llm = ChatOllama(
@@ -212,15 +241,11 @@ consigne = (
 
 # Nouvelles questions : garder les réglages identiques pour tout l’essai.
 questions = [
-    "Dans quelles conditions la caution de la barque est-elle rendue ?",
-    "La lumière attire-t-elle la Veilleuse des roseaux ?",
     "Vaincre la Veilleuse au combat suffit-il à mettre fin aux attaques définitivement ?",
-    "Quelles sont les trois étapes du rituel et dans quel ordre faut-il les accomplir ?",
-    "Quel est le nom du frère d’Orven ?",
 ]
 
 # Nombre de passages transmis à Qwen pour chaque question.
-k_recherche = 4
+k_recherche = 8
 
 print(f"\nComparaison RAG — k={k_recherche}")
 
