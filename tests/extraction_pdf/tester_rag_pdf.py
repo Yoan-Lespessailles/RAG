@@ -210,15 +210,13 @@ consigne = (
     "Information absente des passages."
 )
 
-# Jeu de questions fixe pour comparer les réglages.
-# Les deux formulations sur la prime restent deux essais distincts.
+# Nouvelles questions : garder les réglages identiques pour tout l’essai.
 questions = [
-    "Quelle avance Iria verse-t-elle aux chasseurs ?",
-    "Combien coûte un flacon d’huile de limaille ?",
-    "Quel est le numéro de téléphone de l’auberge ?",
-    "À quelles conditions les chasseurs obtiennent-ils la prime ?",
-    "Quelles conditions faut-il remplir et quelle preuve faut-il présenter pour obtenir la prime ?",
-    "Combien faut-il verser pour louer la barque, caution comprise ?",
+    "Dans quelles conditions la caution de la barque est-elle rendue ?",
+    "La lumière attire-t-elle la Veilleuse des roseaux ?",
+    "Vaincre la Veilleuse au combat suffit-il à mettre fin aux attaques définitivement ?",
+    "Quelles sont les trois étapes du rituel et dans quel ordre faut-il les accomplir ?",
+    "Quel est le nom du frère d’Orven ?",
 ]
 
 # Nombre de passages transmis à Qwen pour chaque question.

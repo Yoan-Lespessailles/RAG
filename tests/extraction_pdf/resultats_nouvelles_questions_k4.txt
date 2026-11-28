@@ -1,0 +1,175 @@
+
+Nombre de sections : 28
+Nombre de passages : 32
+
+Section : Un village derrière les digues — morceau 1
+Page : 1 — 83 tokens de texte
+Un village derrière les digues
+Au bord du marais de Virebrume, Nacreval vit de la récolte des roseaux et de son moulin. Depuis six nuits, une cloche sonne sous les eaux. Deux pêcheurs ont disparu ; une troisième victime, la meunière Maëla, a été retrouvée vivante et muette près de la digue.
+------------------------------------------------------------
+
+Section : Le contrat d’Iria Voss — morceau 1
+Page : 1 — 86 tokens de texte
+Le contrat d’Iria Voss
+Iria Voss, bourgmestre de Nacreval, engage les chasseurs pour identifier la créature et mettre fin aux attaques. Le paiement de base est de 84 couronnes : 24 couronnes d’avance à l’acceptation du contrat et 60 couronnes après la fin des attaques et la vérification des preuves.
+------------------------------------------------------------
+
+Section : Une prime sous condition — morceau 1
+Page : 1 — 84 tokens de texte
+Une prime sous condition
+Iria ajoute une prime de 18 couronnes si Maëla retrouve sa voix et si aucun habitant n’est sacrifié pendant l’enquête. Cette prime est versée avec le solde. Un simple récit de combat ne suffit pas : les chasseurs doivent présenter un fragment du battant noir de la cloche ou un témoignage de Maëla après la levée du mal.
+------------------------------------------------------------
+
+Section : Cadre de jeu — morceau 1
+Page : 1 — 88 tokens de texte
+Cadre de jeu
+Scénario original pour une séance de 2 à 3 heures, avec 2 à 4 personnages. Toutes les règles sont des règles maison autonomes ; ce document n’utilise pas les règles officielles de D&D; ou de The Witcher. Les couronnes sont la monnaie fictive de Nacreval. Les informations réservées au meneur sont incluses dans ce livret.
+------------------------------------------------------------
+
+Chargement du modèle d’embeddings...
+Création de l’index FAISS...
+
+Comparaison RAG — k=4
+
+Question : Dans quelles conditions la caution de la barque est-elle rendue ?
+
+Extrait 1 — distance : 0.7707
+Source : la_cloche_des_roseaux.pdf — page 3 — section : Ce que l’on peut trouver
+Ce que l’on peut trouver
+Sous le ponton nord, une corde récente porte des éclats noirs. Elle a servi à déplacer le battant six nuits auparavant. Au centre du bassin repose la cloche fendue. Ses trois montants métalliques sont espacés de six pas. Une dalle stable, à l’est, permet de déposer le ruban bleu au sec.
+
+Extrait 2 — distance : 0.8873
+Source : la_cloche_des_roseaux.pdf — page 2 — section : Orven, le passeur
+Orven, le passeur
+. Le meneur peut révéler cette différence en faisant examiner la barque.
+
+Extrait 3 — distance : 0.9451
+Source : la_cloche_des_roseaux.pdf — page 5 — section : Chez Orven
+Chez Orven
+La location d’une barque coûte 7 couronnes pour une nuit. Elle transporte au maximum quatre personnes, équipement compris. Une caution de 12 couronnes est demandée en plus du prix de location. Cette caution est rendue si la barque revient intacte avant 8 h le lendemain ; sinon, elle est conservée.
+
+Extrait 4 — distance : 1.0974
+Source : la_cloche_des_roseaux.pdf — page 3 — section : Rejoindre le site
+Rejoindre le site
+L’ancienne écluse se trouve à 40 minutes de marche de Nacreval par le sentier des digues. Une barque louée permet de la rejoindre en 15 minutes. Le ponton nord est praticable ; le passage sud traverse une vase profonde et exige un test physique de difficulté 12.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : La caution de la barque est rendue si la barque revient intacte avant 8 h le lendemain ; sinon, elle est conservée.
+
+------------------------------------------------------------
+
+Question : La lumière attire-t-elle la Veilleuse des roseaux ?
+
+Extrait 1 — distance : 0.8597
+Source : la_cloche_des_roseaux.pdf — page 2 — section : Orven, le passeur
+Orven, le passeur
+Orven a vu une silhouette de roseaux sortir de l’ancienne écluse. Il la croit attirée par le feu : « Elle a suivi la lanterne de mon frère. » Son interprétation est fausse. La créature suivait le tintement de la clochette attachée à la barque, pas la lumière
+
+Extrait 2 — distance : 0.8649
+Source : la_cloche_des_roseaux.pdf — page 4 — section : Nature et comportement
+Nature et comportement
+La Veilleuse des roseaux est un esprit lié à la cloche de l’écluse. Elle prend la forme d’un corps de roseaux gorgés d’eau. Elle attaque les personnes qui déplacent le battant ou font sonner une clochette près du bassin. La lumière seule ne l’attire pas. Elle ne peut pas poursuivre une cible à plus de 30 mètres de la cloche.
+
+Extrait 3 — distance : 1.4386
+Source : la_cloche_des_roseaux.pdf — page 2 — section : Maëla, la survivante
+Maëla, la survivante
+Maëla se repose à l’auberge du Héron gris. Elle ne peut ni parler ni chanter, mais elle entend et écrit normalement. Elle dessine une cloche fendue et trois traits sous une lune. Son carnet précise : « La chose s’est retirée quand le marteau du forgeron a résonné sur l’enclume. »
+
+Extrait 4 — distance : 1.4391
+Source : la_cloche_des_roseaux.pdf — page 3 — section : La marée du soir
+La marée du soir
+Le niveau de l’eau commence à baisser à 21 h. Le battant noir devient accessible à 22 h et reste accessible jusqu’à minuit. Après minuit, l’eau remonte et empêche de l’atteindre sans plonger. La créature peut apparaître dès 21 h, même si le battant n’est pas encore accessible.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Non, la lumière ne attire pas la Veilleuse des roseaux. La créature est attirée par le tintement de la clochette attachée à la barque, pas par la lumière.
+
+------------------------------------------------------------
+
+Question : Vaincre la Veilleuse au combat suffit-il à mettre fin aux attaques définitivement ?
+
+Extrait 1 — distance : 0.7366
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Effet du rituel
+Effet du rituel
+Une fois les trois étapes achevées, la Veilleuse disparaît définitivement, les attaques cessent et Maëla retrouve sa voix à l’aube suivante. Aucun sacrifice humain n’est nécessaire. Si les chasseurs n’ont sacrifié aucun habitant, ils remplissent alors les conditions de la prime de 18 couronnes, sous réserve de présenter une preuve à Iria.
+
+Extrait 2 — distance : 0.9367
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Combattre
+Combattre
+Chaque personnage commence avec 16 points de vie. À son tour, il peut se déplacer et effectuer une action : attaquer, utiliser un objet, frapper un montant ou accomplir une étape du rituel. Une attaque est un jet d’adresse contre la défense adverse ; une arme de personnage inflige 6 dégâts si elle touche
+
+Extrait 3 — distance : 0.9387
+Source : la_cloche_des_roseaux.pdf — page 4 — section : Le silence du fer
+Le silence du fer
+Frapper chacun des trois montants métalliques une fois au cours du même tour interrompt le cri de la Veilleuse et l’empêche d’attaquer pendant le tour suivant. Il faut trois actions distinctes. Répéter des frappes sur un seul montant ne produit pas cet effet.
+
+Extrait 4 — distance : 0.9443
+Source : la_cloche_des_roseaux.pdf — page 4 — section : Caractéristiques de combat
+Caractéristiques de combat
+La Veilleuse possède 28 points de vie et une défense de 12. À chaque tour, elle effectue une attaque contre un personnage à portée. Si elle touche, elle inflige 4 points de dégâts. Une fois par rencontre, son cri impose un test de volonté de difficulté 12 ; un échec empêche la cible d’agir pendant son prochain tour.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Non, vaincre la Veilleuse au combat ne suffit pas à mettre fin aux attaques définitivement. L'effet de fin des attaques est obtenu par le rituel, pas par la victoire au combat. D'après l'Extrait 1, c'est le rituel qui fait disparaître définitivement la Veilleuse et arrête les attaques, tandis que le combat ne mentionne pas cette fin définitive.
+
+------------------------------------------------------------
+
+Question : Quelles sont les trois étapes du rituel et dans quel ordre faut-il les accomplir ?
+
+Extrait 1 — distance : 0.4756
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Trois étapes dans l’ordre
+Trois étapes dans l’ordre
+Le rituel doit se dérouler à l’écluse entre 22 h et minuit. Première étape : replacer le battant noir dans la cloche fendue. Deuxième étape : déposer le ruban bleu de Sélène sur la dalle sèche à l’est
+
+Extrait 2 — distance : 0.8363
+Source : la_cloche_des_roseaux.pdf — page 3 — section : Risque de retour
+Risque de retour
+Quitter le bassin avant la fin du rituel n’annule pas les étapes déjà accomplies durant la même nuit. En revanche, si le rituel n’est pas terminé avant minuit, il faut recommencer ses trois étapes la nuit suivante.
+
+Extrait 3 — distance : 0.8912
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Trois étapes dans l’ordre
+Trois étapes dans l’ordre
+. Troisième étape : prononcer le nom « Sélène » puis frapper les trois montants métalliques dans le même tour. Les trois étapes sont obligatoires et doivent être effectuées dans cet ordre.
+
+Extrait 4 — distance : 0.9718
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Effet du rituel
+Effet du rituel
+Une fois les trois étapes achevées, la Veilleuse disparaît définitivement, les attaques cessent et Maëla retrouve sa voix à l’aube suivante. Aucun sacrifice humain n’est nécessaire. Si les chasseurs n’ont sacrifié aucun habitant, ils remplissent alors les conditions de la prime de 18 couronnes, sous réserve de présenter une preuve à Iria.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Les trois étapes du rituel doivent être accomplies dans l’ordre suivant :  
+1. Replacer le battant noir dans la cloche fendue.  
+2. Déposer le ruban bleu de Sélène sur la dalle sèche à l’est.  
+3. Prononcer le nom « Sélène » puis frapper les trois montants métalliques dans le même tour.
+
+------------------------------------------------------------
+
+Question : Quel est le nom du frère d’Orven ?
+
+Extrait 1 — distance : 1.1654
+Source : la_cloche_des_roseaux.pdf — page 2 — section : Orven, le passeur
+Orven, le passeur
+Orven a vu une silhouette de roseaux sortir de l’ancienne écluse. Il la croit attirée par le feu : « Elle a suivi la lanterne de mon frère. » Son interprétation est fausse. La créature suivait le tintement de la clochette attachée à la barque, pas la lumière
+
+Extrait 2 — distance : 1.2202
+Source : la_cloche_des_roseaux.pdf — page 2 — section : Maëla, la survivante
+Maëla, la survivante
+Maëla se repose à l’auberge du Héron gris. Elle ne peut ni parler ni chanter, mais elle entend et écrit normalement. Elle dessine une cloche fendue et trois traits sous une lune. Son carnet précise : « La chose s’est retirée quand le marteau du forgeron a résonné sur l’enclume. »
+
+Extrait 3 — distance : 1.3227
+Source : la_cloche_des_roseaux.pdf — page 1 — section : Une prime sous condition
+Une prime sous condition
+Iria ajoute une prime de 18 couronnes si Maëla retrouve sa voix et si aucun habitant n’est sacrifié pendant l’enquête. Cette prime est versée avec le solde. Un simple récit de combat ne suffit pas : les chasseurs doivent présenter un fragment du battant noir de la cloche ou un témoignage de Maëla après la levée du mal.
+
+Extrait 4 — distance : 1.3619
+Source : la_cloche_des_roseaux.pdf — page 2 — section : Une histoire effacée
+Une histoire effacée
+. Un billet indique que son ruban bleu a été conservé dans le coffre du moulin. La clé du coffre est confiée à Maëla.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Information absente des passages.
+
+------------------------------------------------------------
