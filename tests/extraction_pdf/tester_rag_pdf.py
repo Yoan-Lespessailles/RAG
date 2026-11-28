@@ -210,17 +210,28 @@ consigne = (
     "Information absente des passages."
 )
 
+# Jeu de questions fixe pour comparer les réglages.
+# Les deux formulations sur la prime restent deux essais distincts.
 questions = [
     "Quelle avance Iria verse-t-elle aux chasseurs ?",
     "Combien coûte un flacon d’huile de limaille ?",
     "Quel est le numéro de téléphone de l’auberge ?",
+    "À quelles conditions les chasseurs obtiennent-ils la prime ?",
+    "Quelles conditions faut-il remplir et quelle preuve faut-il présenter pour obtenir la prime ?",
+    "Combien faut-il verser pour louer la barque, caution comprise ?",
 ]
 
+# Nombre de passages transmis à Qwen pour chaque question.
+k_recherche = 4
+
+print(f"\nComparaison RAG — k={k_recherche}")
+
 for question in questions:
+    
     print(f"\nQuestion : {question}")
 
-    # Conserver les mêmes résultats de recherche : k=2, sans seuil.
-    resultats = index.similarity_search_with_score(question, k=2)
+    # Retrouver jusqu’à k_recherche passages les plus proches.
+    resultats = index.similarity_search_with_score(question, k=k_recherche)
 
     extraits = []
 

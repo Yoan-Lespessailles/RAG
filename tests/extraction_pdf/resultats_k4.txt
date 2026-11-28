@@ -1,0 +1,208 @@
+
+Nombre de sections : 28
+Nombre de passages : 32
+
+Section : Un village derrière les digues — morceau 1
+Page : 1 — 83 tokens de texte
+Un village derrière les digues
+Au bord du marais de Virebrume, Nacreval vit de la récolte des roseaux et de son moulin. Depuis six nuits, une cloche sonne sous les eaux. Deux pêcheurs ont disparu ; une troisième victime, la meunière Maëla, a été retrouvée vivante et muette près de la digue.
+------------------------------------------------------------
+
+Section : Le contrat d’Iria Voss — morceau 1
+Page : 1 — 86 tokens de texte
+Le contrat d’Iria Voss
+Iria Voss, bourgmestre de Nacreval, engage les chasseurs pour identifier la créature et mettre fin aux attaques. Le paiement de base est de 84 couronnes : 24 couronnes d’avance à l’acceptation du contrat et 60 couronnes après la fin des attaques et la vérification des preuves.
+------------------------------------------------------------
+
+Section : Une prime sous condition — morceau 1
+Page : 1 — 84 tokens de texte
+Une prime sous condition
+Iria ajoute une prime de 18 couronnes si Maëla retrouve sa voix et si aucun habitant n’est sacrifié pendant l’enquête. Cette prime est versée avec le solde. Un simple récit de combat ne suffit pas : les chasseurs doivent présenter un fragment du battant noir de la cloche ou un témoignage de Maëla après la levée du mal.
+------------------------------------------------------------
+
+Section : Cadre de jeu — morceau 1
+Page : 1 — 88 tokens de texte
+Cadre de jeu
+Scénario original pour une séance de 2 à 3 heures, avec 2 à 4 personnages. Toutes les règles sont des règles maison autonomes ; ce document n’utilise pas les règles officielles de D&D; ou de The Witcher. Les couronnes sont la monnaie fictive de Nacreval. Les informations réservées au meneur sont incluses dans ce livret.
+------------------------------------------------------------
+
+Chargement du modèle d’embeddings...
+Création de l’index FAISS...
+
+Comparaison RAG — k=4
+
+Question : Quelle avance Iria verse-t-elle aux chasseurs ?
+
+Extrait 1 — distance : 0.7400
+Source : la_cloche_des_roseaux.pdf — page 1 — section : Une prime sous condition
+Une prime sous condition
+Iria ajoute une prime de 18 couronnes si Maëla retrouve sa voix et si aucun habitant n’est sacrifié pendant l’enquête. Cette prime est versée avec le solde. Un simple récit de combat ne suffit pas : les chasseurs doivent présenter un fragment du battant noir de la cloche ou un témoignage de Maëla après la levée du mal.
+
+Extrait 2 — distance : 0.8409
+Source : la_cloche_des_roseaux.pdf — page 1 — section : Le contrat d’Iria Voss
+Le contrat d’Iria Voss
+Iria Voss, bourgmestre de Nacreval, engage les chasseurs pour identifier la créature et mettre fin aux attaques. Le paiement de base est de 84 couronnes : 24 couronnes d’avance à l’acceptation du contrat et 60 couronnes après la fin des attaques et la vérification des preuves.
+
+Extrait 3 — distance : 0.8769
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Effet du rituel
+Effet du rituel
+Une fois les trois étapes achevées, la Veilleuse disparaît définitivement, les attaques cessent et Maëla retrouve sa voix à l’aube suivante. Aucun sacrifice humain n’est nécessaire. Si les chasseurs n’ont sacrifié aucun habitant, ils remplissent alors les conditions de la prime de 18 couronnes, sous réserve de présenter une preuve à Iria.
+
+Extrait 4 — distance : 0.9806
+Source : la_cloche_des_roseaux.pdf — page 5 — section : Le ruban et le battant
+Le ruban et le battant
+Le ruban bleu est remis gratuitement aux chasseurs par Maëla si leur objectif lui est expliqué par écrit. Le battant noir ne peut pas être acheté au village : il doit être récupéré dans la grille centrale de l’écluse pendant la fenêtre d’accès.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Iria verse 24 couronnes d’avance aux chasseurs.
+
+------------------------------------------------------------
+
+Question : Combien coûte un flacon d’huile de limaille ?
+
+Extrait 1 — distance : 0.6943
+Source : la_cloche_des_roseaux.pdf — page 5 — section : Chez Lysa
+Chez Lysa
+Un flacon d’huile de limaille coûte 9 couronnes. Il permet d’enduire une seule arme pour une rencontre ; l’effet cesse à la fin du combat. La barre de frappe coûte 4 couronnes. Un marteau ou une autre pièce de métal solide peut aussi faire résonner un montant.
+
+Extrait 2 — distance : 1.2591
+Source : la_cloche_des_roseaux.pdf — page 5 — section : À l’auberge
+À l’auberge
+Une nuit à l’auberge du Héron gris coûte 5 couronnes par personne, repas du soir compris. Une ration à emporter coûte 2 couronnes. Un jeu de trois bouchons de cire coûte 3 couronnes et protège trois personnes contre le cri de la Veilleuse pendant une rencontre ; les porteurs n’entendent alors pas les avertissements oraux.
+
+Extrait 3 — distance : 1.2618
+Source : la_cloche_des_roseaux.pdf — page 5 — section : Chez Orven
+Chez Orven
+La location d’une barque coûte 7 couronnes pour une nuit. Elle transporte au maximum quatre personnes, équipement compris. Une caution de 12 couronnes est demandée en plus du prix de location. Cette caution est rendue si la barque revient intacte avant 8 h le lendemain ; sinon, elle est conservée.
+
+Extrait 4 — distance : 1.3951
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Clôturer le contrat
+Clôturer le contrat
+Iria vérifie les preuves au retour des chasseurs. La somme totale du contrat avec prime est de 102 couronnes, avance comprise. Si l’avance a déjà été versée, il reste donc 78 couronnes à recevoir lorsque les conditions de réussite et de prime sont réunies.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Un flacon d’huile de limaille coûte 9 couronnes.
+
+------------------------------------------------------------
+
+Question : Quel est le numéro de téléphone de l’auberge ?
+
+Extrait 1 — distance : 1.5137
+Source : la_cloche_des_roseaux.pdf — page 2 — section : Une histoire effacée
+Une histoire effacée
+. Un billet indique que son ruban bleu a été conservé dans le coffre du moulin. La clé du coffre est confiée à Maëla.
+
+Extrait 2 — distance : 1.5255
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Trois étapes dans l’ordre
+Trois étapes dans l’ordre
+Le rituel doit se dérouler à l’écluse entre 22 h et minuit. Première étape : replacer le battant noir dans la cloche fendue. Deuxième étape : déposer le ruban bleu de Sélène sur la dalle sèche à l’est
+
+Extrait 3 — distance : 1.5484
+Source : la_cloche_des_roseaux.pdf — page 5 — section : À l’auberge
+À l’auberge
+Une nuit à l’auberge du Héron gris coûte 5 couronnes par personne, repas du soir compris. Une ration à emporter coûte 2 couronnes. Un jeu de trois bouchons de cire coûte 3 couronnes et protège trois personnes contre le cri de la Veilleuse pendant une rencontre ; les porteurs n’entendent alors pas les avertissements oraux.
+
+Extrait 4 — distance : 1.5487
+Source : la_cloche_des_roseaux.pdf — page 2 — section : Une histoire effacée
+Une histoire effacée
+Aux archives du moulin, un registre daté de 47 ans raconte qu’une gardienne nommée Sélène est morte lors de la fermeture de l’écluse. Sa cloche d’alarme a été jetée à l’eau pour dissimuler une négligence du conseil de l’époque
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Information absente des passages.
+
+------------------------------------------------------------
+
+Question : À quelles conditions les chasseurs obtiennent-ils la prime ?
+
+Extrait 1 — distance : 0.9899
+Source : la_cloche_des_roseaux.pdf — page 5 — section : Dépenser l’avance
+Dépenser l’avance
+Les 24 couronnes d’avance peuvent financer une partie des préparatifs. Les chasseurs paient les fournitures eux-mêmes ; le contrat ne prévoit aucun remboursement supplémentaire. La caution de la barque est une somme immobilisée, distincte du coût définitif de la location.
+
+Extrait 2 — distance : 1.0139
+Source : la_cloche_des_roseaux.pdf — page 1 — section : Le contrat d’Iria Voss
+Le contrat d’Iria Voss
+Iria Voss, bourgmestre de Nacreval, engage les chasseurs pour identifier la créature et mettre fin aux attaques. Le paiement de base est de 84 couronnes : 24 couronnes d’avance à l’acceptation du contrat et 60 couronnes après la fin des attaques et la vérification des preuves.
+
+Extrait 3 — distance : 1.0459
+Source : la_cloche_des_roseaux.pdf — page 5 — section : Le ruban et le battant
+Le ruban et le battant
+Le ruban bleu est remis gratuitement aux chasseurs par Maëla si leur objectif lui est expliqué par écrit. Le battant noir ne peut pas être acheté au village : il doit être récupéré dans la grille centrale de l’écluse pendant la fenêtre d’accès.
+
+Extrait 4 — distance : 1.0654
+Source : la_cloche_des_roseaux.pdf — page 1 — section : Une prime sous condition
+Une prime sous condition
+Iria ajoute une prime de 18 couronnes si Maëla retrouve sa voix et si aucun habitant n’est sacrifié pendant l’enquête. Cette prime est versée avec le solde. Un simple récit de combat ne suffit pas : les chasseurs doivent présenter un fragment du battant noir de la cloche ou un témoignage de Maëla après la levée du mal.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Les chasseurs obtiennent la prime si Maëla retrouve sa voix et si aucun habitant n’est sacrifié pendant l’enquête.
+
+------------------------------------------------------------
+
+Question : Quelles conditions faut-il remplir et quelle preuve faut-il présenter pour obtenir la prime ?
+
+Extrait 1 — distance : 1.0442
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Clôturer le contrat
+Clôturer le contrat
+Iria vérifie les preuves au retour des chasseurs. La somme totale du contrat avec prime est de 102 couronnes, avance comprise. Si l’avance a déjà été versée, il reste donc 78 couronnes à recevoir lorsque les conditions de réussite et de prime sont réunies.
+
+Extrait 2 — distance : 1.1641
+Source : la_cloche_des_roseaux.pdf — page 1 — section : Une prime sous condition
+Une prime sous condition
+Iria ajoute une prime de 18 couronnes si Maëla retrouve sa voix et si aucun habitant n’est sacrifié pendant l’enquête. Cette prime est versée avec le solde. Un simple récit de combat ne suffit pas : les chasseurs doivent présenter un fragment du battant noir de la cloche ou un témoignage de Maëla après la levée du mal.
+
+Extrait 3 — distance : 1.2596
+Source : la_cloche_des_roseaux.pdf — page 4 — section : Caractéristiques de combat
+Caractéristiques de combat
+La Veilleuse possède 28 points de vie et une défense de 12. À chaque tour, elle effectue une attaque contre un personnage à portée. Si elle touche, elle inflige 4 points de dégâts. Une fois par rencontre, son cri impose un test de volonté de difficulté 12 ; un échec empêche la cible d’agir pendant son prochain tour.
+
+Extrait 4 — distance : 1.2963
+Source : la_cloche_des_roseaux.pdf — page 6 — section : Trois étapes dans l’ordre
+Trois étapes dans l’ordre
+. Troisième étape : prononcer le nom « Sélène » puis frapper les trois montants métalliques dans le même tour. Les trois étapes sont obligatoires et doivent être effectuées dans cet ordre.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Pour obtenir la prime de 18 couronnes, il faut que :
+
+- Maëla retrouve sa voix,  
+- Aucun habitant n’est sacrifié pendant l’enquête.  
+
+La preuve à présenter est soit un fragment du battant noir de la cloche, soit un témoignage de Maëla après la levée du mal.
+
+------------------------------------------------------------
+
+Question : Combien faut-il verser pour louer la barque, caution comprise ?
+
+Extrait 1 — distance : 0.4500
+Source : la_cloche_des_roseaux.pdf — page 5 — section : Chez Orven
+Chez Orven
+La location d’une barque coûte 7 couronnes pour une nuit. Elle transporte au maximum quatre personnes, équipement compris. Une caution de 12 couronnes est demandée en plus du prix de location. Cette caution est rendue si la barque revient intacte avant 8 h le lendemain ; sinon, elle est conservée.
+
+Extrait 2 — distance : 0.7694
+Source : la_cloche_des_roseaux.pdf — page 5 — section : Dépenser l’avance
+Dépenser l’avance
+Les 24 couronnes d’avance peuvent financer une partie des préparatifs. Les chasseurs paient les fournitures eux-mêmes ; le contrat ne prévoit aucun remboursement supplémentaire. La caution de la barque est une somme immobilisée, distincte du coût définitif de la location.
+
+Extrait 3 — distance : 1.1436
+Source : la_cloche_des_roseaux.pdf — page 3 — section : Ce que l’on peut trouver
+Ce que l’on peut trouver
+Sous le ponton nord, une corde récente porte des éclats noirs. Elle a servi à déplacer le battant six nuits auparavant. Au centre du bassin repose la cloche fendue. Ses trois montants métalliques sont espacés de six pas. Une dalle stable, à l’est, permet de déposer le ruban bleu au sec.
+
+Extrait 4 — distance : 1.1591
+Source : la_cloche_des_roseaux.pdf — page 5 — section : À l’auberge
+À l’auberge
+Une nuit à l’auberge du Héron gris coûte 5 couronnes par personne, repas du soir compris. Une ration à emporter coûte 2 couronnes. Un jeu de trois bouchons de cire coûte 3 couronnes et protège trois personnes contre le cri de la Veilleuse pendant une rencontre ; les porteurs n’entendent alors pas les avertissements oraux.
+
+Génération de la réponse avec Qwen...
+
+Réponse de Qwen : Pour louer la barque, caution comprise, il faut verser 7 couronnes pour la nuit, plus une caution de 12 couronnes.  
+Donc, le montant total est de 7 + 12 = 19 couronnes.
+
+Réponse : 19 couronnes.
+
+------------------------------------------------------------
