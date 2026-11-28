@@ -1,0 +1,206 @@
+
+Nombre de sections : 28
+Nombre de passages : 32
+
+Section : Un village derrière les digues — morceau 1
+Page : 1 — 83 tokens de texte
+Un village derrière les digues
+Au bord du marais de Virebrume, Nacreval vit de la récolte des roseaux et de son moulin. Depuis six nuits, une cloche sonne sous les eaux. Deux pêcheurs ont disparu ; une troisième victime, la meunière Maëla, a été retrouvée vivante et muette près de la digue.
+------------------------------------------------------------
+
+Section : Le contrat d’Iria Voss — morceau 1
+Page : 1 — 86 tokens de texte
+Le contrat d’Iria Voss
+Iria Voss, bourgmestre de Nacreval, engage les chasseurs pour identifier la créature et mettre fin aux attaques. Le paiement de base est de 84 couronnes : 24 couronnes d’avance à l’acceptation du contrat et 60 couronnes après la fin des attaques et la vérification des preuves.
+------------------------------------------------------------
+
+Section : Une prime sous condition — morceau 1
+Page : 1 — 84 tokens de texte
+Une prime sous condition
+Iria ajoute une prime de 18 couronnes si Maëla retrouve sa voix et si aucun habitant n’est sacrifié pendant l’enquête. Cette prime est versée avec le solde. Un simple récit de combat ne suffit pas : les chasseurs doivent présenter un fragment du battant noir de la cloche ou un témoignage de Maëla après la levée du mal.
+------------------------------------------------------------
+
+Section : Cadre de jeu — morceau 1
+Page : 1 — 88 tokens de texte
+Cadre de jeu
+Scénario original pour une séance de 2 à 3 heures, avec 2 à 4 personnages. Toutes les règles sont des règles maison autonomes ; ce document n’utilise pas les règles officielles de D&D; ou de The Witcher. Les couronnes sont la monnaie fictive de Nacreval. Les informations réservées au meneur sont incluses dans ce livret.
+------------------------------------------------------------
+
+Chargement du modèle d’embeddings...
+Création de l’index FAISS...
+
+Question : Quelle avance Iria verse-t-elle aux chasseurs ?
+
+FAISS seul
+1. Page 1 — Une prime sous condition — morceau 1
+2. Page 1 — Le contrat d’Iria Voss — morceau 1
+3. Page 6 — Effet du rituel — morceau 1
+4. Page 5 — Le ruban et le battant — morceau 1
+
+Recherche hybride
+1. Page 1 — Le contrat d’Iria Voss — morceau 1
+2. Page 5 — Le ruban et le battant — morceau 1
+3. Page 1 — Une prime sous condition — morceau 1
+4. Page 6 — Effet du rituel — morceau 1
+
+------------------------------------------------------------
+
+Question : Combien coûte un flacon d’huile de limaille ?
+
+FAISS seul
+1. Page 5 — Chez Lysa — morceau 1
+2. Page 5 — À l’auberge — morceau 1
+3. Page 5 — Chez Orven — morceau 1
+4. Page 6 — Clôturer le contrat — morceau 1
+
+Recherche hybride
+1. Page 5 — Chez Lysa — morceau 1
+2. Page 5 — À l’auberge — morceau 1
+3. Page 4 — Résistance et vulnérabilité — morceau 1
+4. Page 5 — Chez Orven — morceau 1
+
+------------------------------------------------------------
+
+Question : Quel est le numéro de téléphone de l’auberge ?
+
+FAISS seul
+1. Page 2 — Une histoire effacée — morceau 2
+2. Page 6 — Trois étapes dans l’ordre — morceau 1
+3. Page 5 — À l’auberge — morceau 1
+4. Page 2 — Une histoire effacée — morceau 1
+
+Recherche hybride
+1. Page 5 — À l’auberge — morceau 1
+2. Page 2 — Une histoire effacée — morceau 1
+3. Page 2 — Orven, le passeur — morceau 1
+4. Page 3 — Rejoindre le site — morceau 1
+
+------------------------------------------------------------
+
+Question : À quelles conditions les chasseurs obtiennent-ils la prime ?
+
+FAISS seul
+1. Page 5 — Dépenser l’avance — morceau 1
+2. Page 1 — Le contrat d’Iria Voss — morceau 1
+3. Page 5 — Le ruban et le battant — morceau 1
+4. Page 1 — Une prime sous condition — morceau 1
+
+Recherche hybride
+1. Page 5 — Dépenser l’avance — morceau 1
+2. Page 6 — Effet du rituel — morceau 1
+3. Page 1 — Le contrat d’Iria Voss — morceau 1
+4. Page 1 — Une prime sous condition — morceau 1
+
+------------------------------------------------------------
+
+Question : Quelles conditions faut-il remplir et quelle preuve faut-il présenter pour obtenir la prime ?
+
+FAISS seul
+1. Page 6 — Clôturer le contrat — morceau 1
+2. Page 1 — Une prime sous condition — morceau 1
+3. Page 4 — Caractéristiques de combat — morceau 1
+4. Page 6 — Trois étapes dans l’ordre — morceau 2
+
+Recherche hybride
+1. Page 6 — Clôturer le contrat — morceau 1
+2. Page 1 — Une prime sous condition — morceau 1
+3. Page 6 — Effet du rituel — morceau 1
+4. Page 4 — Le silence du fer — morceau 1
+
+------------------------------------------------------------
+
+Question : Combien faut-il verser pour louer la barque, caution comprise ?
+
+FAISS seul
+1. Page 5 — Chez Orven — morceau 1
+2. Page 5 — Dépenser l’avance — morceau 1
+3. Page 3 — Ce que l’on peut trouver — morceau 1
+4. Page 5 — À l’auberge — morceau 1
+
+Recherche hybride
+1. Page 5 — Chez Orven — morceau 1
+2. Page 5 — Dépenser l’avance — morceau 1
+3. Page 2 — Orven, le passeur — morceau 2
+4. Page 6 — Clôturer le contrat — morceau 1
+
+------------------------------------------------------------
+
+Question : Dans quelles conditions la caution de la barque est-elle rendue ?
+
+FAISS seul
+1. Page 3 — Ce que l’on peut trouver — morceau 1
+2. Page 2 — Orven, le passeur — morceau 2
+3. Page 5 — Chez Orven — morceau 1
+4. Page 3 — Rejoindre le site — morceau 1
+
+Recherche hybride
+1. Page 5 — Chez Orven — morceau 1
+2. Page 2 — Orven, le passeur — morceau 2
+3. Page 5 — Dépenser l’avance — morceau 1
+4. Page 6 — Trois étapes dans l’ordre — morceau 1
+
+------------------------------------------------------------
+
+Question : La lumière attire-t-elle la Veilleuse des roseaux ?
+
+FAISS seul
+1. Page 2 — Orven, le passeur — morceau 1
+2. Page 4 — Nature et comportement — morceau 1
+3. Page 2 — Maëla, la survivante — morceau 1
+4. Page 3 — La marée du soir — morceau 1
+
+Recherche hybride
+1. Page 2 — Orven, le passeur — morceau 1
+2. Page 4 — Nature et comportement — morceau 1
+3. Page 3 — Le vrai déclencheur — morceau 1
+4. Page 2 — Maëla, la survivante — morceau 1
+
+------------------------------------------------------------
+
+Question : Vaincre la Veilleuse au combat suffit-il à mettre fin aux attaques définitivement ?
+
+FAISS seul
+1. Page 6 — Effet du rituel — morceau 1
+2. Page 6 — Combattre — morceau 1
+3. Page 4 — Le silence du fer — morceau 1
+4. Page 4 — Caractéristiques de combat — morceau 1
+
+Recherche hybride
+1. Page 6 — Effet du rituel — morceau 1
+2. Page 3 — Le vrai déclencheur — morceau 1
+3. Page 4 — Le silence du fer — morceau 1
+4. Page 1 — Le contrat d’Iria Voss — morceau 1
+
+------------------------------------------------------------
+
+Question : Quelles sont les trois étapes du rituel et dans quel ordre faut-il les accomplir ?
+
+FAISS seul
+1. Page 6 — Trois étapes dans l’ordre — morceau 1
+2. Page 3 — Risque de retour — morceau 1
+3. Page 6 — Trois étapes dans l’ordre — morceau 2
+4. Page 6 — Effet du rituel — morceau 1
+
+Recherche hybride
+1. Page 6 — Trois étapes dans l’ordre — morceau 2
+2. Page 3 — Risque de retour — morceau 1
+3. Page 6 — Trois étapes dans l’ordre — morceau 1
+4. Page 6 — Effet du rituel — morceau 1
+
+------------------------------------------------------------
+
+Question : Quel est le nom du frère d’Orven ?
+
+FAISS seul
+1. Page 2 — Orven, le passeur — morceau 1
+2. Page 2 — Maëla, la survivante — morceau 1
+3. Page 1 — Une prime sous condition — morceau 1
+4. Page 2 — Une histoire effacée — morceau 2
+
+Recherche hybride
+1. Page 2 — Orven, le passeur — morceau 1
+2. Page 2 — Une histoire effacée — morceau 2
+3. Page 6 — Trois étapes dans l’ordre — morceau 2
+4. Page 1 — Une prime sous condition — morceau 1
+
+------------------------------------------------------------
